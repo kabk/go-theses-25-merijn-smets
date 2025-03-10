@@ -38,8 +38,8 @@ h1, h2, h3 {
 }
 
 h1{
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 p {
@@ -193,7 +193,8 @@ p {
 }
 
 .chapterone_halloween {
-  font-size: calc(var(--font-size)*1);
+  font-size: calc(var(--font-size)*0.9);
+  line-height: 1.3;
   margin-top: 3%;
   margin-bottom: 3%;
   color:  rgb(255, 255, 255);
@@ -347,9 +348,10 @@ p {
 .chapter_black {
   position: relative;
   padding-top: 5%;
+  padding-bottom: 8%;
   background-color: rgb(154, 87, 56);
   z-index: 4;
-  height: 105vh;
+  height: fit-content;
   gap: 0px;
 }
 
@@ -995,11 +997,11 @@ a:hover {
     font-family: 'yes';
     font-weight: bold;
     text-align: center;
-    font-size: calc(var(--font-size)*1.65);
-    line-height: 1.7;
+    font-size: calc(var(--font-size)*1.45);
+    line-height: 1.6;
     color: rgb(214, 113, 194);
     margin-top: 35%;
-    margin-top: calc(50vh - 12rem);
+    margin-top: calc(50vh - 9rem);
     padding-top: .005em;
   }
 
@@ -1072,9 +1074,19 @@ a:hover {
   .chapter_black{
     position: relative;
     padding-top: 5%;
+    padding-bottom: 8%;
     background-color:rgb(154, 87, 56);
     z-index: +1;
-    height: 150vh;
+    height: fit-content;
+  }
+
+  .chapterone_halloween {
+    font-size: calc(var(--font-size)*1);
+    text-align: left;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .chapter_louise{
