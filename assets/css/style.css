@@ -37,6 +37,11 @@ h1, h2, h3 {
   text-wrap: balance;
 }
 
+h1{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 p {
   text-wrap: pretty;
 }
@@ -214,7 +219,7 @@ p {
   line-height: 1.33;
   margin-top: 3.5%;
   margin-bottom: 3.5%;
-  text-align: justify;
+  text-align: left;
 }
 
 .Stone_italic{
@@ -987,11 +992,11 @@ a:hover {
   }
 
   .title{
-    font-family: yes;
+    font-family: 'yes';
     font-weight: bold;
     text-align: center;
-    font-size: calc(var(--font-size)*1.7);
-    line-height: 1.65;
+    font-size: calc(var(--font-size)*1.65);
+    line-height: 1.7;
     color: rgb(214, 113, 194);
     margin-top: 35%;
     margin-top: calc(50vh - 12rem);
@@ -1025,7 +1030,7 @@ a:hover {
   }
 
   .chapterone {
-    font-size: calc(var(--font-size)*1.1);
+    font-size: calc(var(--font-size)*1.2);
     line-height: 1.4;
     text-align: left;
     margin-top: 3%;
@@ -1110,6 +1115,8 @@ a:hover {
   }
 
   .chapterone_cheer{
+    font-size: calc(var(--font-size)*1.1);
+    text-align: left;
     padding-right: 5%;
     padding-left: 5%;
   }
@@ -1119,7 +1126,7 @@ a:hover {
   }
 
   .quote {
-    margin-top: 4%;
+    margin-top: 5%;
     width: 75%;
     text-align: center;
     font-family: 'century';
@@ -1217,7 +1224,7 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: -1.5%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
   }
 
   #caption_opening {
