@@ -194,14 +194,13 @@ p {
 
 .chapterone_halloween {
   font-size: calc(var(--font-size)*0.9);
-  line-height: 1.3;
   margin-top: 3%;
   margin-bottom: 3%;
   color:  rgb(255, 255, 255);
   font-family: Century;
   text-align: justify;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 21%;
+  padding-right: 21%;
 }
 
 .chapterone_cheer {
@@ -579,6 +578,18 @@ a:hover {
   font-family: 'Courier New', Courier, monospace;
 }
 
+#caption_opening_left {
+
+  margin-top: 1%;
+  margin-bottom: -1%;
+  font-size: calc(var(--font-size)/1.7);
+  color: inherit;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 #caption_opening_white{
   color: white;
   margin-left: 5%;
@@ -740,7 +751,7 @@ a:hover {
 
 .cheer {
   position: sticky;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
   padding-top: 4%;
   background-color: rgb(199, 224, 224);
   z-index: 5;
@@ -904,14 +915,26 @@ a:hover {
   justify-content: center;
   align-items: center;
   overflow: visible;
-  z-index: 4;
+  z-index: 5;
   background-image: linear-gradient(rgb(154, 87, 56), rgb(239, 239, 239));
 }
 
 .animation-container-three {
   position: relative;
   width: 100vw;
-  height: 35vh;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  z-index: 4;
+  background-image: linear-gradient(rgb(48, 98, 225), rgb(239, 239, 239));
+}
+
+.animation-container-four {
+  position: relative;
+  width: 100vw;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -940,7 +963,7 @@ a:hover {
   position: absolute;
   left: -45vh; 
   top: 0vh;
-  animation: moveAcross 8s ease-in-out infinite, 
+  animation: moveAcross 10s ease-in-out infinite, 
              rotate 10s linear infinite;
 }
 
@@ -953,7 +976,19 @@ a:hover {
   left: -45vh;  
   top: 0vh;
   bottom: 0vh;
-  animation: moveAcrossmeme 8s ease-in-out infinite, rotate 10s linear infinite;
+  animation: moveAcrossmeme 10s ease-in-out infinite, rotate 10s linear infinite;
+}
+
+.animated-item-divine {
+  width: 40vh; 
+  height: 40vh;
+  background-image: url('../images/divine_1.jpg');
+  background-size: cover;
+  position: absolute;
+  left: -45vh; 
+  top: 0vh;
+  animation: moveAcross 10s ease-in-out infinite, 
+             rotate 10s linear infinite;
 }
 
 @keyframes moveAcross {
@@ -1001,7 +1036,7 @@ a:hover {
     line-height: 1.6;
     color: rgb(214, 113, 194);
     margin-top: 35%;
-    margin-top: calc(50vh - 9rem);
+    margin-top: calc(50vh - 10.5rem);
     padding-top: .005em;
   }
 
@@ -1011,6 +1046,11 @@ a:hover {
 
   .mobile-break {
     display: block; /* Forces "a" to be on a new line on small screens */
+  }
+
+  .intro {
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .subtitle {
@@ -1204,6 +1244,19 @@ a:hover {
     top: 3vh;
     animation: moveAcrossmeme 7s ease-in-out infinite, rotate 4s ease-in-out infinite;
   }
+
+  .animated-item-divine {
+    width: 30vh; 
+    height: 30vh;
+    background-image: url('../images/divine_1.jpg');
+    background-size: cover;
+    position: absolute;
+    z-index: +1;
+    left: -30vh; 
+    top:3vh;
+    animation: moveAcross 7s ease-in-out infinite, 
+               rotate 4s ease-in-out infinite;
+  }
   
   @keyframes moveAcross {
     0% {
@@ -1250,6 +1303,21 @@ a:hover {
     margin-right: 10%;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+  }
+
+  #caption_opening_left {
+
+    margin-top: 1%;
+    margin-bottom: -1%;
+    font-size: calc(var(--font-size)/1.6);
+    line-height: 1.4;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
   }
 
   #chaptertwo {
