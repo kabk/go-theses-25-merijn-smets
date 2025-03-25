@@ -162,3 +162,15 @@ figureLinks.forEach(function (triggerElement, i) {
         }
     });
 });
+
+
+window.onload = function() {
+    let hintContainer = document.querySelector('.swipe-hint-container');
+    let swipeHint = document.createElement('div');
+    swipeHint.classList.add('swipe-hint');
+    hintContainer.appendChild(swipeHint);
+
+    setTimeout(function() {
+        hintContainer.innerHTML = ''; // Remove the hint after 3 seconds
+    }, 3000);
+};
