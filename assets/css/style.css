@@ -269,11 +269,30 @@ p {
   text-align: left;
 }
 
+.chapterthanks {
+  position: relative;
+  font-size: calc(var(--font-size)*1);
+  line-height: 1.4;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: rgb(239, 239, 239);
+  padding-bottom: 5%;
+  padding-top: 5%;
+  width: 100%;
+  z-index: 3;
+  text-align: justify;
+  margin: 0 auto;
+  padding-right: 21%;
+  padding-left: 21%;
+  border-radius: 0 0 0rem 0rem;
+}
+
 .chaptercredits{
   position: relative;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 21%;
+  border-radius: 0rem 0rem 10rem 10rem;
   background-color: rgb(239, 239, 239);
   background-image: linear-gradient(rgb(178 211 233), rgb(239, 239, 239));
 }
@@ -596,12 +615,26 @@ a:hover {
 
 .slider_cheer_nav {
   display: flex;
-  column-gap: 1rem;
+  column-gap: 0.6rem;
   position: absolute;
-  bottom: 1.25rem;
+  bottom: -1.2rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+}
+
+.slider_cheer_nav a{
+  width: 0.5rem;
+  height:0.5rem;
+  border-radius: 50%;
+  background-color: #a9c9d5;
+  opacity: 1;
+  transition: opacity ease 250ms;
+}
+
+
+.slider_cheer_nav a:hover {
+  background-color: #04db0b;
 }
 
 .caption_cheer {
@@ -632,6 +665,18 @@ a:hover {
   margin-right: 5%;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
+}
+
+#caption_opening_quote{
+  font-family: 'Century';
+  font-style: italic;
+  margin-top: 1%;
+  margin-bottom: 0;
+  font-size: calc(var(--font-size)/1.2);
+  color: inherit;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
 }
 
 #caption_opening_left {
@@ -778,7 +823,7 @@ a:hover {
 }
 
 .chapterbib {
-  position: relative;
+  position: sticky;
   padding-top: 5%;
   padding-bottom: 5%;
   height: 100%;
@@ -788,6 +833,7 @@ a:hover {
   z-index: 3;
   padding-right: 21%;
   padding-left: 21%;
+  border-radius: 0rem 0rem 0rem 0rem;
   background-color: rgb(225, 225, 225);
 }
 
@@ -805,6 +851,13 @@ a:hover {
   height:100vh;
 }
 
+.chaptertwo.sticky-item {
+  position: sticky;
+  padding-top: 0%;
+  top: 0;
+  height:100vh;
+}
+
 .introduction{
   position: sticky;
   background-color: rgb(225, 225, 225);
@@ -812,6 +865,7 @@ a:hover {
   height: 100vh;
   height: auto;
   text-align: justify;
+  border-radius: 10rem 10rem 0rem 0rem;
 
   padding-top: 3%;
   padding-bottom: 6%;
@@ -825,6 +879,7 @@ a:hover {
   padding-top: 4%;
   background-color: rgb(199, 224, 224);
   z-index: 5;
+  border-radius: 10rem 10rem 0rem 0rem;
 }
 
 
@@ -1018,7 +1073,7 @@ a:hover {
 .animation-container-five {
   position: relative;
   width: 100vw;
-  height: 40vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1162,7 +1217,7 @@ a:hover {
     line-height: 1.6;
     color: rgb(214, 113, 194);
     margin-top: 35%;
-    margin-top: calc(50vh - 9rem);
+    margin-top: calc(50vh - 10.3rem);
     padding-top: .5em;
   }
 
@@ -1187,6 +1242,12 @@ a:hover {
     padding-right: 2%;
   }
 
+  #acknowledgements-title {
+    font-size: calc(var(--font-size)*2.1); /* Adjust font size for mobile */
+    /* Add any other specific styling for this title */
+}
+
+  
   .subtitle {
     font-size: calc(var(--font-size)*1.2);
     font-family: 'Century';
@@ -1196,6 +1257,10 @@ a:hover {
     padding: auto;
     margin-top: 8%;
     margin-bottom: 4%;
+  }
+
+  .cheer{
+    border-radius: 3rem 3rem 0rem 0rem;
   }
 
   .title_cheer {
@@ -1273,7 +1338,7 @@ a:hover {
     position: sticky;
     padding-top: 2.5%;
     top: 0;
-    height: 60vh;
+    height: 100vh;
   }
 
   .column_halloween {
@@ -1298,6 +1363,7 @@ a:hover {
 
     padding-right: 5%;
     padding-left: 5%;
+    border-radius: 3rem 3rem 0rem 0rem;
   }
 
   .chapterone_cheer{
@@ -1311,9 +1377,17 @@ a:hover {
     text-align: left;
   }
 
+  .chapterthanks{
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 0rem 0rem 0rem 0rem;
+  }
+
   .chapterbib{
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 10%;
+    border-radius: 0rem 0rem 0rem 0rem;
     
   }
 
@@ -1321,6 +1395,7 @@ a:hover {
     padding-left: 5%;
     padding-bottom: 10%;
     font-size: calc(var(--font-size)*0.9);
+    border-radius: 0rem 0rem 3rem 3rem;
   }
 
   .quote {
@@ -1612,7 +1687,7 @@ a:hover {
   }
 
   .animation-container-two {
-    height: 40vh;
+    height: 30vh;
   }
 
 
@@ -1621,6 +1696,12 @@ a:hover {
     width: 100vw;
     height: 40vh;
   }
+
+  .animation-container-four{
+    height: 30vh;
+  }
+
+ 
 
 
 

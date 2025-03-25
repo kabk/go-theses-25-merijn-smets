@@ -174,3 +174,4 @@ window.onload = function() {
         hintContainer.innerHTML = ''; // Remove the hint after 3 seconds
     }, 3000);
 };
+
