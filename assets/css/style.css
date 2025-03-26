@@ -1269,6 +1269,15 @@ a:hover {
     padding: auto;
   }
 
+  .slider_cheer_nav {
+   bottom: -0.85rem;
+  }
+
+  .audio-1 {
+    padding-top: 2%;
+  }
+  
+
   .chapterone {
     font-size: calc(var(--font-size)*1.2);
     line-height: 1.4;
