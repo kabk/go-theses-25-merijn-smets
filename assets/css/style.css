@@ -1243,8 +1243,7 @@ a:hover {
   }
 
   #acknowledgements-title {
-    font-size: calc(var(--font-size)*2.1); /* Adjust font size for mobile */
-    /* Add any other specific styling for this title */
+    font-size: calc(var(--font-size)*2.1); 
 }
 
   
